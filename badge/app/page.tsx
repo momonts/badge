@@ -26,7 +26,7 @@ export default function Home() {
     <main>
       <title>Orion | Welcome</title>
       <Navbar />
-      <div className="text-white hero min-h-screen bg-stone-900">
+      <div className="text-white hero min-h-screen bg-neutral-950">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="h-[40rem] w-full flex items-center justify-center">
             <div onClick={redirectToPrivate} className="cursor-pointer">
@@ -45,9 +45,8 @@ export default function Home() {
               possibilities.
             </h1>
             <p className="py-6">
-              Implementing a blockchain-based system for transparent tracking
-              and verification to ensure fair distribution and mitigate hoarding
-              and scalping.
+              Revolutionizing concert experience, and providing scalping
+              solution.
             </p>
           </div>
         </div>

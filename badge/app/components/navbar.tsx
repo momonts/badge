@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-slate-950 sticky top-0 z-20">
+    <div className="navbar bg-black sticky top-0 z-20">
       <div className="navbar-start">
         <div className="dropdown">
           <ul
@@ -60,6 +60,9 @@ export default function Navbar() {
             <a>Help</a>
           </li>
         </ul>
+      </div>
+      <div className="navbar-end mr-[2rem]">
+        <a className="btn text-zinc-100">Get Started</a>
       </div>
     </div>
   );
