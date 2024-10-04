@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { createClient } from "@/utils/supabase/server";
+import { createClient } from "@/app/utils/supabase/server";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import React from "react";
