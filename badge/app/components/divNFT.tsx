@@ -80,7 +80,7 @@ export default async function DivNFT() {
       <div className="grid grid-cols-8 gap-4 p-10 flex justify-center">
         {nftDataArray.length > 0 ? (
           nftDataArray.map((nft, index) => (
-            <div key={index} className="size-64 drop-shadow-md">
+            <div key={index} className="size-40 drop-shadow-md">
               <p className="subpixel-antialiased font-bold tracking-wide">
                 {nft.name}
               </p>

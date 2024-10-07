@@ -71,7 +71,8 @@ export default async function PrivatePage() {
     <main>
       <Navbar />
       <center>
-        <div className="stats bg-primary text-primary-content">
+        <div className="p-5"></div>
+        <div className="stats bg-neutral-950 text-primary-content drop-shadow-lg">
           <div className="stat">
             <div className="stat-title text-white">Solana Balance</div>
             <div className="stat-value">{solanabalance.toFixed(2)} SOL</div>
@@ -90,12 +91,12 @@ export default async function PrivatePage() {
           </div>
 
           <div className="avatar">
-            <div className="w-24 rounded-full">
+            <div className="w-24 rounded-full m-2">
               <img src={profilePic.publicUrl} />
             </div>
           </div>
         </div>
-        <div className="divider divider-error"></div>
+        <div className="divider divider-neutral-content"></div>
       </center>
 
       <DivNFT />
