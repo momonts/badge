@@ -27,3 +27,10 @@ export function createClient() {
     }
   )
 }
+
+export async function getUser() {
+  const { auth } = createClient();
+  const user = (await auth.getUser()).data.user;
+
+  return user;
+}
