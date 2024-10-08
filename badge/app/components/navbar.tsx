@@ -36,13 +36,13 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex text-white">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="./private">Dashboard</a>
+            <a href="/private">Dashboard</a>
           </li>
           <li>
-            <a href="./account">Account</a>
+            <a href="/account">Account</a>
           </li>
           <li>
-            <a href="http://localhost:3000">Business</a>
+            <a href="./private/business">Business</a>
           </li>
         </ul>
       </div>
