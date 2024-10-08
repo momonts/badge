@@ -1,14 +1,10 @@
 "use client";
 
 import React from "react";
-import { Modal, ModalTrigger } from "./ui/animated-modal";
 import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const router = useRouter();
-  const redirectToPrivate = () => {
-    router.push("/private");
-  };
 
   return (
     <div className="navbar bg-black sticky top-0 z-20">
@@ -46,7 +42,7 @@ export default function Navbar() {
             <a href="./account">Account</a>
           </li>
           <li>
-            <a>Help</a>
+            <a href="http://localhost:3000">Business</a>
           </li>
         </ul>
       </div>
