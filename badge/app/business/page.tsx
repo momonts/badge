@@ -278,7 +278,7 @@ export default function minting() {
         <WalletModalProvider>
           <div className="flex justify-center ">
             <div>
-              <h1 className="text-center">Mint Porcupine Playground Pals</h1>
+              <h1 className="text-center">Mint Concert Tickets</h1>
               <Image
                 className=""
                 src="/collection.png"

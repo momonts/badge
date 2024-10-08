@@ -42,7 +42,7 @@ export default function Navbar() {
             <a href="/account">Account</a>
           </li>
           <li>
-            <a href="./private/business">Business</a>
+            <a href="/business">Business</a>
           </li>
         </ul>
       </div>
