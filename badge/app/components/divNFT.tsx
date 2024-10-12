@@ -76,7 +76,7 @@ export default async function DivNFT() {
     <main>
       <center>{/* <h1>COLLECTIONS</h1> */}</center>
       <div className="grid grid-cols-8 gap-4 p-10 flex justify-center">
-        {/* {nftDataArray.length > 0 ? (
+        {nftDataArray.length > 0 ? (
           nftDataArray.map((nft, index) => (
             <div key={index} className="size-40 drop-shadow-md">
               <p className="subpixel-antialiased font-bold tracking-wide">
@@ -88,7 +88,7 @@ export default async function DivNFT() {
           ))
         ) : (
           <p>No NFT data available.</p>
-        )} */}
+        )}
       </div>
     </main>
   );
