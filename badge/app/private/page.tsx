@@ -72,22 +72,17 @@ export default async function PrivatePage() {
       <Navbar />
       <center>
         <div className="p-5"></div>
-        <div className="stats bg-neutral-950 text-primary-content drop-shadow-lg">
+        <div className=" outline outline-2 outline-zinc-400 stats bg-neutral-950 text-primary-content shadow-md shadow-zinc-600">
           <div className="stat">
             <div className="stat-title text-white">Solana Balance</div>
             <div className="stat-value">{solanabalance.toFixed(2)} SOL</div>
-            <div className="stat-actions">
-              {/* <button className="btn btn-sm btn-success">Add funds</button> */}
-            </div>
+            <div className="stat-actions"></div>
           </div>
 
           <div className="stat">
             <div className="stat-title text-white">USD Equivalent</div>
             <div className="stat-value">${usdbalance.toFixed(2)}</div>
-            <div className="stat-actions">
-              {/* <button className="btn btn-sm">Withdrawal</button>
-              <button className="btn btn-sm">Deposit</button> */}
-            </div>
+            <div className="stat-actions"></div>
           </div>
 
           <div className="avatar">
@@ -99,6 +94,9 @@ export default async function PrivatePage() {
         <div className="divider divider-neutral-content"></div>
       </center>
 
+      <center>
+        <h1>COLLECTIONS</h1>
+      </center>
       <DivNFT />
       <Footer />
     </main>

@@ -7,7 +7,7 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <div className="navbar bg-black sticky top-0 z-20">
+    <div className="navbar bg-black sticky top-0 z-20 ">
       <div className="navbar-start">
         <div className="dropdown">
           <ul

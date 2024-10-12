@@ -74,22 +74,26 @@ export default async function DivNFT() {
   const nftDataArray = await fetchAllNFTData(jsonUris);
   return (
     <main>
-      <center>{/* <h1>COLLECTIONS</h1> */}</center>
-      <div className="grid grid-cols-8 gap-4 p-10 flex justify-center">
-        {nftDataArray.length > 0 ? (
-          nftDataArray.map((nft, index) => (
-            <div key={index} className="size-40 drop-shadow-md">
-              <p className="subpixel-antialiased font-bold tracking-wide">
-                {nft.name}
-              </p>
-              <img src={nft.image} alt={nft.name} />
-              <a>{nft.description}</a>
-            </div>
-          ))
-        ) : (
-          <p>No NFT data available.</p>
-        )}
-      </div>
+      <center>
+        <div className="max-w-4xl grid place-content-center grid-cols-4 grid-rows-auto gap-x-4 gap-y-32">
+          {nftDataArray.length > 0 ? (
+            nftDataArray.map((nft, index) => (
+              <div
+                key={index}
+                className="max-w-52 outline outline-2 outline-neutral-700 shadow-md shadow-neutral-600"
+              >
+                <p className="subpixel-antialiased font-bold tracking-wide">
+                  {nft.name}
+                </p>
+                <img src={nft.image} alt={nft.name} />
+                <p className="text-clip">{nft.description}</p>
+              </div>
+            ))
+          ) : (
+            <p>No NFT data available.</p>
+          )}
+        </div>
+      </center>
     </main>
   );
 }
